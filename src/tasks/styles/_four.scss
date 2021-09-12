@@ -1,0 +1,21 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+.ch4{
+  &__dark-mode-btn {
+    border: 0;
+    padding: 8px;
+    background-color: #FCE7F3;
+    color: #EC4899;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+
+body {
+  background-color: #0a0a0a;
+  padding: 5%;
+  color:#ebfffc;
+}
