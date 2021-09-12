@@ -9,12 +9,12 @@ import DSwitch from "./DSwitch";
 const ChallengeFour = () => {
   return (
     <div className="ch4 p-6">
-      <div class="columns is-mobile">
-        <div class="column is-one-fifth">
+      <div className="columns is-mobile">
+        <div className="column is-one-fifth">
           <BackToHome />
         </div>
-        <div class="column"></div>
-        <div class="column is-one-fifth">
+        <div className="column"></div>
+        <div className="column is-one-fifth">
           <DSwitch />
         </div>
       </div>
