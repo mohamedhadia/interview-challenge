@@ -25,7 +25,7 @@ const UserTable = ({ users, loadMore }) => {
                 <td>
                   <span
                     className={` ${
-                      user.gender == "male"
+                      user.gender === "male"
                         ? "tag is-info is-light"
                         : "tag is-danger is-light"
                     } `}

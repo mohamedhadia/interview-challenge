@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { BackToHome } from "../App";
-import { Bar } from "react-chartjs-2";
 import GenderBar from "./components/GenderBar";
 import AgeBar from "./components/AgeBar";
 import CountryBar from "./components/CountryBar";
@@ -56,25 +55,25 @@ const ChallengeThree = () => {
   for (const user of users) {
     let value = user.gender;
     obj["gender"][value] =
-      obj["gender"][value] != undefined ? obj["gender"][value] + 1 : 1;
+      obj["gender"][value] !== undefined ? obj["gender"][value] + 1 : 1;
   }
   for (const user of users) {
     let value = user.dob.age;
     obj["age"][value] =
-      obj["age"][value] != undefined ? obj["age"][value] + 1 : 1;
+      obj["age"][value] !== undefined ? obj["age"][value] + 1 : 1;
   }
 
   for (const user of users) {
     let value = user.location.country;
     obj["country"][value] =
-      obj["country"][value] != undefined ? obj["country"][value] + 1 : 1;
+      obj["country"][value] !== undefined ? obj["country"][value] + 1 : 1;
   }
 
   for (const user of users) {
     let value = new Date(user.registered.date).getFullYear();
-    console.log(value);
+    //console.log(value);
     obj["registration_date"][value] =
-      obj["registration_date"][value] != undefined
+      obj["registration_date"][value] !== undefined
         ? obj["registration_date"][value] + 1
         : 1;
   }

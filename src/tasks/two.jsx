@@ -31,7 +31,7 @@ const ChallengeTwo = () => {
     let pageN = +1;
     const response = await fetch(apiUrl);
     const users2 = await response.json();
-    console.log(users2);
+    // console.log(users2);
     setUsers(users.concat(users2.results));
   };
 

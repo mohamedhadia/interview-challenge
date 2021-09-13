@@ -18,7 +18,7 @@ const DMSwitch = () => {
       body.classList.add("has-text-black-ter");
       body.classList.add("has-background-white");
     }
-    console.log(darkMode);
+    //console.log(darkMode);
   };
 
   return (
